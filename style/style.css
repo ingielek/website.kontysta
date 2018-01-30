@@ -10,10 +10,11 @@
   max-width: 100vw;
   margin: 0 auto; }
 
-.row:before, .row:after {
-  content: "";
-  display: table;
-  clear: both; }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 [class*='col-'] {
   display: inline-block;
@@ -115,7 +116,9 @@
   background-color: white;
   position: relative;
   margin-left: 600px;
-  margin-top: 120px; }
+  margin-top: 70px;
+  margin-bottom: 60px;
+  letter-spacing: 0.1em; }
 
 #about h3 {
   margin-bottom: 30px;
@@ -124,9 +127,65 @@
   color: black; }
 
 #about p {
-  color: #271E1E; }
+  color: #271E1E;
+  font-size: 16px; }
 
-#about ul li {
-  color: #271E1E; }
+#about ul {
+  text-decoration: none;
+  list-style: none; }
+  #about ul li {
+    font-size: 16px;
+    color: #271E1E; }
+
+#wspolpraca {
+  height: 800px;
+  background-color: whitesmoke;
+  padding: 100px;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: start;
+  flex-direction: row; }
+
+#icon1 {
+  display: table-cell;
+  box-shadow: 0 4px 35px -15px black;
+  background-color: white;
+  padding: 30px; }
+  #icon1 h4 {
+    letter-spacing: 0.1em;
+    margin-left: 150px; }
+  #icon1 p {
+    width: 400px;
+    text-align: justify;
+    margin-left: 150px; }
+
+#icon2 {
+  display: table-cell;
+  box-shadow: 0 4px 35px -15px black;
+  background-color: white;
+  padding: 30px; }
+  #icon2 h4 {
+    letter-spacing: 0.1em;
+    margin-left: 150px; }
+  #icon2 p {
+    width: 400px;
+    text-align: justify;
+    margin-left: 150px; }
+
+#icon3 {
+  width: 500px;
+  display: table-cell;
+  box-shadow: 0 4px 35px -15px black;
+  background-color: white;
+  padding: 30px;
+  align-self: flex-start; }
+  #icon3 h4 {
+    letter-spacing: 0.1em;
+    margin-left: 150px; }
+  #icon3 p {
+    width: 400px;
+    text-align: justify;
+    margin-left: 150px; }
 
 /*# sourceMappingURL=style.css.map */
